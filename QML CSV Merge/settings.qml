@@ -200,13 +200,11 @@ ApplicationWindow {
 
             Pane {
                 id: csvFieldPaneThree
-                //width: parent.width
                 Material.elevation: 6
                 visible: false
 
                 TextArea {
                     id: csvFieldsThree
-                    //width: parent.width
                     text: "Input csv fields here."
                     wrapMode: Text.WordWrap
 
@@ -226,13 +224,11 @@ ApplicationWindow {
 
             Pane {
                 id: csvPanePathFour
-                //width: parent.width
                 Material.elevation: 6
                 visible: false
 
                 TextArea {
                     id: csvPathFour
-                    //width: parent.width
                     text: "Path to first CSV file."
                     wrapMode: Text.WordWrap
 
@@ -252,13 +248,11 @@ ApplicationWindow {
 
             Pane {
                 id: csvFieldPaneFour
-                //width: parent.width
                 Material.elevation: 6
                 visible: false
 
                 TextArea {
                     id: csvFieldsFour
-                    //width: parent.width
                     text: "Input csv fields here."
                     wrapMode: Text.WordWrap
 
@@ -278,13 +272,11 @@ ApplicationWindow {
 
             Pane {
                 id: csvPanePathFive
-                //width: parent.width
                 Material.elevation: 6
                 visible: false
 
                 TextArea {
                     id: csvPathFive
-                    //width: parent.width
                     text: "Path to first CSV file."
                     wrapMode: Text.WordWrap
 
@@ -304,13 +296,11 @@ ApplicationWindow {
 
             Pane {
                 id: csvFieldPaneFive
-                //width: parent.width
                 Material.elevation: 6
                 visible: false
 
                 TextArea {
                     id: csvFieldsFive
-                    //width: parent.width
                     text: "Input csv fields here."
                     wrapMode: Text.WordWrap
 
@@ -328,14 +318,245 @@ ApplicationWindow {
                 }
             }
 
+            Pane {
+                id: csvPanePathSix
+                Material.elevation: 6
+                visible: false
 
+                TextArea {
+                    id: csvPathSix
+                    text: "Path to first CSV file."
+                    wrapMode: Text.WordWrap
 
+                    ToolTip {
+                        id: csvPathSixTT
+                        text: "Full path to your CSV file."
+                        parent: csvPathSix
+                        visible: csvPathSix.hovered
+                    }
 
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvPathSix.text = ""}
+                    }
+                }
+            }
 
+            Pane {
+                id: csvFieldPaneSix
+                Material.elevation: 6
+                visible: false
 
+                TextArea {
+                    id: csvFieldsSix
+                    text: "Input csv fields here."
+                    wrapMode: Text.WordWrap
 
+                    ToolTip {
+                        id: csvFieldsSixTT
+                        text: "Input csv fields separated by a comma. Eg, field1,field2,field3"
+                        parent: csvFieldsSix
+                        visible: csvFieldsSix.hovered
+                    }
 
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvFieldsSix.text = ""}
+                    }
+                }
+            }
 
+            Pane {
+                id: csvPanePathSeven
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvPathSeven
+                    text: "Path to first CSV file."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvPathSevenTT
+                        text: "Full path to your CSV file."
+                        parent: csvPathSeven
+                        visible: csvPathSeven.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvPathSeven.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvFieldPaneSeven
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvFieldsSeven
+                    text: "Input csv fields here."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvFieldsSevenTT
+                        text: "Input csv fields separated by a comma. Eg, field1,field2,field3"
+                        parent: csvFieldsSeven
+                        visible: csvFieldsSeven.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvFieldsSeven.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvPanePathEight
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvPathEight
+                    text: "Path to first CSV file."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvPathEightTT
+                        text: "Full path to your CSV file."
+                        parent: csvPathEight
+                        visible: csvPathEight.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvPathEight.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvFieldPaneEight
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvFieldsEight
+                    text: "Input csv fields here."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvFieldsEightTT
+                        text: "Input csv fields separated by a comma. Eg, field1,field2,field3"
+                        parent: csvFieldsEight
+                        visible: csvFieldsEight.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvFieldsEight.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvPanePathNine
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvPathNine
+                    text: "Path to first CSV file."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvPathNineTT
+                        text: "Full path to your CSV file."
+                        parent: csvPathNine
+                        visible: csvPathNine.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvPathNine.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvFieldPaneNine
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvFieldsNine
+                    text: "Input csv fields here."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvFieldsNineTT
+                        text: "Input csv fields separated by a comma. Eg, field1,field2,field3"
+                        parent: csvFieldsNine
+                        visible: csvFieldsNine.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvFieldsNine.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvPanePathTen
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvPathTen
+                    text: "Path to first CSV file."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvPathTenTT
+                        text: "Full path to your CSV file."
+                        parent: csvPathTen
+                        visible: csvPathTen.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvPathTen.text = ""}
+                    }
+                }
+            }
+
+            Pane {
+                id: csvFieldPaneTen
+                Material.elevation: 6
+                visible: false
+
+                TextArea {
+                    id: csvFieldsTen
+                    text: "Input csv fields here."
+                    wrapMode: Text.WordWrap
+
+                    ToolTip {
+                        id: csvFieldsTenTT
+                        text: "Input csv fields separated by a comma. Eg, field1,field2,field3"
+                        parent: csvFieldsTen
+                        visible: csvFieldsTen.hovered
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {csvFieldsTen.text = ""}
+                    }
+                }
+            }
 
 
 
